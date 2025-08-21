@@ -1,6 +1,6 @@
 'use client';
 
-import { SignaturePreviewProps, defaultUserData, socialPlatforms } from '../types/signature';
+import { SignaturePreviewProps, defaultUserData, socialPlatforms, UserData, SignatureTemplate } from '../types/signature';
 import { clsx } from 'clsx';
 import { Eye, Mail } from 'lucide-react';
 
@@ -17,9 +17,9 @@ const getFontAwesomeClass = (platform: string) => {
 };
 
 // Generate preview HTML with FontAwesome icons (for preview only)
-const generatePreviewHTML = (userData: any, template: any) => {
+const generatePreviewHTML = (userData: UserData, template: SignatureTemplate) => {
   const socialLinks = Object.entries(userData.socialLinks)
-    .filter(([_, handle]) => handle && handle.trim())
+    .filter(([, handle]) => handle && handle.trim())
     .map(([platform, handle]) => {
       const config = socialPlatforms[platform as keyof typeof socialPlatforms];
       if (!config) return '';
@@ -169,7 +169,7 @@ export default function SignaturePreviewWithIcons({
           <div className="text-gray-800 mb-6">
             <p className="mb-4">Hi there,</p>
             <p className="mb-4">
-              Thanks for your email. I'll get back to you soon!
+              Thanks for your email. I&apos;ll get back to you soon!
             </p>
             <p className="mb-6">Best regards,</p>
           </div>

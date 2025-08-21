@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { UserData } from './types/signature';
 import { signatureTemplates } from './lib/templates';
 import UserInputForm from './components/UserInputForm';
@@ -80,8 +81,21 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-white/10 bg-black/20 backdrop-blur-sm mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="text-center text-gray-400 text-sm">
-            <p>Built with Next.js, React, and TailwindCSS</p>
+          <div className="text-center space-y-4">
+            <div className="flex justify-center">
+              <a href='https://ko-fi.com/Y8Y04MVLP' target='_blank' rel="noopener noreferrer">
+                <Image
+                  height={36}
+                  width={144}
+                  src='https://storage.ko-fi.com/cdn/kofi3.png?v=6'
+                  alt='Buy Me a Coffee at ko-fi.com'
+                  className="hover:opacity-80 transition-opacity duration-200"
+                />
+              </a>
+            </div>
+            <div className="text-gray-400 text-sm">
+              <p>Built with Next.js, React, and TailwindCSS</p>
+            </div>
           </div>
         </div>
       </footer>

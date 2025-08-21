@@ -30,7 +30,7 @@ export default function ExportButtons({
     ];
 
     const socialLinks = Object.entries(data.socialLinks)
-      .filter(([_, handle]) => handle && handle.trim())
+      .filter(([, handle]) => handle && handle.trim())
       .map(([platform, handle]) => `${platform}: ${handle}`)
       .join(' | ');
 
@@ -180,14 +180,14 @@ export default function ExportButtons({
         <div className="text-xs text-gray-400 space-y-2">
           <div>
             <p><strong className="text-white">HTML Signature:</strong></p>
-            <p>1. Click "Copy HTML" above</p>
-            <p>2. Go to your email client's signature settings</p>
+            <p>1. Click &quot;Copy HTML&quot; above</p>
+            <p>2. Go to your email client&apos;s signature settings</p>
             <p>3. Paste (Ctrl+V) directly into the signature editor</p>
             <p>4. The formatting and icons should appear automatically</p>
           </div>
           <div>
             <p><strong className="text-white">Text Fallback:</strong></p>
-            <p>Use for plain text emails or when HTML isn't supported</p>
+            <p>Use for plain text emails or when HTML isn&apos;t supported</p>
           </div>
           <p className="mt-2 text-yellow-400">
             💡 Works with Gmail, Outlook, Apple Mail, Thunderbird, and most email clients

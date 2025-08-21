@@ -35,7 +35,7 @@ export default function SignaturePreview({
           <div className="text-gray-800 mb-6">
             <p className="mb-4">Hi there,</p>
             <p className="mb-4">
-              Thanks for your email. I'll get back to you soon!
+              Thanks for your email. I&apos;ll get back to you soon!
             </p>
             <p className="mb-6">Best regards,</p>
           </div>

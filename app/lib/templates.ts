@@ -15,7 +15,7 @@ const getPlatformIcon = (platform: string) => {
 // Helper function to generate social links HTML with actual icons
 const generateSocialLinks = (socialLinks: UserData['socialLinks'], style: 'minimal' | 'professional' | 'social' | 'compact') => {
   const links = Object.entries(socialLinks)
-    .filter(([_, handle]) => handle && handle.trim())
+    .filter(([, handle]) => handle && handle.trim())
     .map(([platform, handle]) => {
       const config = socialPlatforms[platform as keyof typeof socialPlatforms];
       if (!config) return '';
