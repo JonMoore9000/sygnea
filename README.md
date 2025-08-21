@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sygnea - Modern Email Signature Generator
 
-## Getting Started
+A beautiful, modern email signature generator built with Next.js, React, and TailwindCSS. Create professional email signatures with live preview and multiple export options.
 
-First, run the development server:
+![Sygnea Screenshot](https://via.placeholder.com/800x400/1a1a2e/ffffff?text=Sygnea+Email+Signature+Generator)
 
+## ✨ Features
+
+- **🎨 Modern Dark UI**: Beautiful glassmorphism design with smooth animations
+- **⚡ Live Preview**: See your signature update in real-time as you type
+- **📱 Responsive Design**: Works perfectly on desktop, tablet, and mobile
+- **🎯 Multiple Templates**: Choose from 4 professionally designed templates:
+  - Minimal: Clean and simple
+  - Professional: Corporate and polished
+  - Social: Emphasizes social media presence
+  - Compact: Space-efficient design
+- **📋 Easy Export**: Copy HTML or plain text versions to clipboard
+- **🔗 Social Integration**: Support for Twitter, LinkedIn, Instagram, GitHub, and Facebook
+- **✅ Email Client Compatible**: Templates work across major email clients
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd sygnea
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: TailwindCSS 4
+- **Icons**: Lucide React
+- **Utilities**: clsx for conditional classes
 
-## Learn More
+## 📖 Usage
 
-To learn more about Next.js, take a look at the following resources:
+1. **Enter Your Information**: Fill in your name, position, website, and social media handles
+2. **Choose a Template**: Select from 4 modern signature designs
+3. **Preview in Real-time**: See exactly how your signature will look in emails
+4. **Export**: Copy HTML version for rich email clients or plain text for fallback
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Custom brand colors and fonts
+- Logo upload with auto-resize
+- Smart social detection (auto-link handles)
+- Sharable preview links
+- User accounts and saved signatures
+- PNG export functionality
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Styled with [TailwindCSS](https://tailwindcss.com/)
+- Icons by [Lucide](https://lucide.dev/)

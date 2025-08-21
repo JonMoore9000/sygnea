@@ -1,0 +1,60 @@
+{
+  "project": "Modern Email Signature Generator",
+  "name": "Sygnea",
+  "description": "A simple, modern, dark-mode webapp that generates clean email signatures from minimal inputs. Users can preview in real time, choose a template, and copy/export their signature.",
+  "features": {
+    "core": [
+      {
+        "name": "User Inputs",
+        "details": [
+          "Name",
+          "Position/Title",
+          "Website",
+          "Social links (Twitter, LinkedIn, Instagram, etc.)"
+        ]
+      },
+      {
+        "name": "Template Picker",
+        "details": [
+          "3–4 modern templates to choose from",
+          "Dummy data pre-inserted so users see designs immediately"
+        ]
+      },
+      {
+        "name": "Live Preview",
+        "details": [
+          "Signature updates instantly as user edits inputs",
+          "Dark mode default with clean modern design"
+        ]
+      },
+      {
+        "name": "Copy/Export",
+        "details": [
+          "Copy HTML to clipboard",
+          "Copy plain text version (fallback)",
+          "Optional: Export signature as PNG"
+        ]
+      }
+    ],
+    "ui": {
+      "style": "Dark mode by default (no light mode yet)",
+      "design": [
+        "Minimalist UI with soft cards or glassmorphism",
+        "Modern typography",
+        "Accent colors for social icons"
+      ]
+    },
+    "future": [
+      "Custom brand colors and fonts",
+      "Logo upload with auto-resize",
+      "Smart social detection (auto-link handles)",
+      "Sharable preview link"
+    ]
+  },
+  "tech_stack": {
+    "frontend": ["Next.js", "React", "TailwindCSS"],
+    "backend": "None required (client-side only)",
+    "optional": ["Node/Express if you add user accounts or saved signatures"]
+  },
+  "mvp_scope": "Keep it simple: single-page app with inputs on the left, live preview + template selector on the right, export buttons at the bottom."
+}
